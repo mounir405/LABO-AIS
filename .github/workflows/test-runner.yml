@@ -11,6 +11,8 @@ jobs:
       - self-hosted
       - linux
       - x64
+      - deploy
+      - web
 
     steps:
       - name: Verification
