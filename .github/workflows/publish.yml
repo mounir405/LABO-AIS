@@ -8,11 +8,10 @@ jobs:
   deploy:
     runs-on: [self-hosted, linux, x64, deploy, web]
     steps:
-      -
- name: Récupération du dépôt
+      - name: Récupération du dépôt
         uses: actions/checkout@v4
-      -
- name: Publication de la page index.html
+
+      - name: Publication de la page index.html
         run: |
           sudo mkdir -p /var/www/site
           sudo cp index.html /var/www/site/index.html
